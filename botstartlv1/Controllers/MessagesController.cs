@@ -26,7 +26,7 @@ namespace botstartlv1
                 int length = (activity.Text ?? string.Empty).Length;
 
                 // return our reply to the user
-                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                Activity reply = activity.CreateReply($"안녕하세요 강의 들으러 오신 여러분. 여러분이 보내신 {activity.Text} 라는 것의 글자 수는 {length} 개에요.");
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else
